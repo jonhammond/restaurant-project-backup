@@ -1,0 +1,97 @@
+{% extends 'layout.html' %}
+
+{% block title %}{{ title }}{% endblock %}
+
+
+{% block content %}
+
+  <div class="container add-border">
+
+    <form>
+      <br><br>
+      Name<br><br>
+      <input type="text" name="restName" placeholder="Restaurant Name">
+      <br><br>
+      Location<br><br>
+      <input type="text" name="city" placeholder="City"><br><br>
+      <select name="state">
+        <option value="AL">AL</option>
+        <option value="AK">AK</option>
+        <option value="AZ">AZ</option>
+        <option value="AR">AR</option>
+        <option value="CA">CA</option>
+        <option value="CO">CO</option>
+        <option value="CT">CT</option>
+        <option value="DE">DE</option>
+        <option value="DC">DC</option>
+        <option value="FL">FL</option>
+        <option value="GA">GA</option>
+        <option value="HI">HI</option>
+        <option value="ID">ID</option>
+        <option value="IL">IL</option>
+        <option value="IN">IN</option>
+        <option value="IA">IA</option>
+        <option value="KS">KS</option>
+        <option value="KY">KY</option>
+        <option value="LA">LA</option>
+        <option value="ME">ME</option>
+        <option value="MD">MD</option>
+        <option value="MA">MA</option>
+        <option value="MI">MI</option>
+        <option value="MN">MN</option>
+        <option value="MS">MS</option>
+        <option value="MO">MO</option>
+        <option value="MT">MT</option>
+        <option value="NE">NE</option>
+        <option value="NV">NV</option>
+        <option value="NH">NH</option>
+        <option value="NJ">NJ</option>
+        <option value="NM">NM</option>
+        <option value="NY">NY</option>
+        <option value="NC">NC</option>
+        <option value="ND">ND</option>
+        <option value="OH">OH</option>
+        <option value="OK">OK</option>
+        <option value="OR">OR</option>
+        <option value="PA">PA</option>
+        <option value="RI">RI</option>
+        <option value="SC">SC</option>
+        <option value="SD">SD</option>
+        <option value="TN">TN</option>
+        <option value="TX">TX</option>
+        <option value="UT">UT</option>
+        <option value="VT">VT</option>
+        <option value="VA">VA</option>
+        <option value="WA">WA</option>
+        <option value="WV">WV</option>
+        <option value="WI">WI</option>
+        <option value="WY">WY</option>
+      </select><br><br>
+      Cuisine<br><br>
+      <select name="food-type">
+        <option value="american">American</option>
+        <option value="chinese">Chinese</option>
+        <option value="italian">Italian</option>
+        <option value="mediterranean">Mediterranean</option>
+        <option value="mexican">Mexican</option>
+        <option value="thai">Thai</option>
+      </select><br><br>
+      Rating
+      <fieldset>
+        <input type="radio" id="rating-5" name="rating" value="5" /><label for="rating-5">5</label>
+        <input type="radio" id="rating-4" name="rating" value="4" /><label for="rating-4">4</label>
+        <input type="radio" id="rating-3" name="rating" value="3" /><label for="rating-3">3</label>
+        <input type="radio" id="rating-2" name="rating" value="2" /><label for="rating-2">2</label>
+        <input type="radio" id="rating-1" name="rating" value="1" /><label for="rating-1">1</label>
+      </fieldset><br><br>
+      Image
+      <input type="text" name="image-name" placeholder="Image URL">
+      <br><br>
+      <textarea rows="10" cols="60" placeholder="Short Bio"></textarea>
+      <button type="submit" value="Submit" name="submit">Submit</button>
+      <button type="reset" value="Reset" name="reset">Cancel</button>
+    </form>
+
+  </div>
+
+{% endblock %}

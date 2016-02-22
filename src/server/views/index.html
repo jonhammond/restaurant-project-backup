@@ -1,0 +1,67 @@
+{% extends 'layout.html' %}
+
+{% block title %}{{ title }}{% endblock %}
+
+
+{% block content %}
+
+<!-- IMAGES -->
+  <div class="container">
+    <div class="col-xs-4 restBox">
+      <a href="/restaurants/:id" type="button">
+        <p>Pasta Freddy's</p>
+        <img src="./images/italian.png" class="image">
+        <p>Italian Cuisine</p>
+        <p>Sacramento, CA</p>
+      </a>
+    </div>
+    <div class="col-xs-4 restBox">
+      <a href="/restaurants/:id" type="button">
+        <p>Pho Mazing</p>
+        <img src="./images/pho.jpg" class="image">
+        <p>Vietnamese Cuisine</p>
+        <p>Boulder,CO</p>
+      </a>
+    </div>
+    <div class="col-xs-4 restBox">
+      <a href="/restaurants/:id" type="button">
+        <p>Fiestaritos</p>
+        <img src="./images/mexican.png" class="image">
+        <p>Mexican Cuisine</p>
+        <p>Lincoln, NE</p>
+      </a>
+    </div>
+  </div>
+
+  <br>
+
+  <div class="container">
+    <div class="col-xs-4 restBox">
+      <a href="/restaurants/:id" type="button">
+        <p>Bangkok Grill</p>
+        <img src="./images/thai.jpg" class="image">
+        <p>Thai Cuisine</p>
+        <p>Brooklyn, NY</p>
+      </a>
+    </div>
+
+    <div class="col-xs-4 restBox">
+      <a href="/restaurants/:id" type="button">
+        <p>Burger Bar</p>
+        <img src="./images/burger.png" class="image">
+        <p>American Cuisine</p>
+        <p>Seattle, WA</p>
+      </a>
+    </div>
+
+    <div class="col-xs-4 restBox">
+      <a href="/restaurants/:id" type="button">
+        <p>Los Tacos</p>
+        <img src="./images/mexican.png" class="image">
+        <p>Mexican Cuisine</p>
+        <p>Lincoln, NE</p>
+      </a>
+    </div>
+  </div>
+
+{% endblock %}
